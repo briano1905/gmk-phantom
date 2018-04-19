@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<title>GMK Phantom</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>GMK PHANTOM</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#intro" class="w3-bar-item w3-button">Intro</a>
+      <a href="#kits" class="w3-bar-item w3-button">Kits</a>
+      <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+      <a href="#pre-order" class="w3-bar-item w3-button w3-black">Pre-Order</a>
+    </div>
+  </div>
+</div>
+
+<!-- Display the countdown timer in an element -->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 1, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "GMK PHANTOM IS NOW LIVE!";
+  }
+}, 1000);
+</script>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="./pics/renders/m65.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white w3-padding w3-black w3-opacity-min w3-hide-small"><b id="demo">...</b></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1024px">
+
+<!-- Intro Section -->
+  <div class="w3-padding-32" id="intro">
+    <h1 class="w3-container">Intro</h1>
+    <p>GMK Phantom is a keycap set for mechanical keyboards, made from injection molded double-shot ABS plastics. it will be using the classic Cherry profile</p>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Cherry Profile</div>
+      <img src="./pics/kits/profile.jpg" alt="Cherry Profile" style="width:100%">
+    </div>
+  </div>
+
+<!-- Kits Section -->
+  <div class="w3-padding-32" id="kits">
+    <h1 class="w3-container">Kits</h1>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Base</div>
+      <img src="./pics/kits/bases.jpg" alt="Base Kit" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Spacebar</div>
+      <img src="./pics/kits/spacebars.jpg" alt="Spacebar Kit" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">40s</div>
+      <img src="./pics/kits/40ss.jpg" alt="40s Kit" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Ergoplanck</div>
+      <img src="./pics/kits/ergoplancks.jpg" alt="Ergoplanck Kit" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Euro</div>
+      <img src="./pics/kits/euros.jpg" alt="Euro Kit" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Colevrak</div>
+      <img src="./pics/kits/colevraks.jpg" alt="Colevrak Kit" style="width:100%">
+    </div>
+  </div>
+
+<!-- Gallery Section -->
+  <div class="w3-padding-32" id="gallery">
+    <h1 class="w3-container">Gallery</h1>
+    <p>Thank you Janglad for the renders!</p>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Modern M0110 | Janglad & HeroyJenkins</div>
+      <img src="./pics/renders/m0110.jpg" alt="Modern M0110" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">MechMini2 | MechKeys</div>
+      <img src="./pics/renders/mechmini2.jpg" alt="MechMini2" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Fjell | Mekanisk</div>
+      <img src="./pics/renders/fjell.jpg" alt="Fjell" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Ergodox</div>
+      <img src="./pics/renders/ergodox.jpg" alt="Ergodox" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">660-A</div>
+      <img src="./pics/renders/660.jpg" alt="660-A" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">660-B</div>
+      <img src="./pics/renders/660.jpg" alt="660 Angled" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">980-A</div>
+      <img src="./pics/renders/980.jpg" alt="980-A" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">980-B</div>
+      <img src="./pics/renders/980-angled.jpg" alt="980-B" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">Purple M0110</div>
+      <img src="./pics/renders/m0110-angled.jpg" alt="Purple M0110" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">M60-A | RAMA WORKS</div>
+      <img src="./pics/renders/m60.png" alt="Purple M0110" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">M60-A | MOON</div>
+      <img src="./pics/renders/m60-moon.jpg" alt="Purple M0110" style="width:100%">
+    </div>
+    <div class="w3-display-container w3-margin-bottom">
+      <div class="w3-display-topleft w3-black w3-padding">M60-A | KURO</div>
+      <img src="./pics/renders/m60-kuro.jpg" alt="M60-A" style="width:100%">
+      <p>*renders above are for demonstration purpose only. please refer to the kits section to see the keys included.</p>
+    </div>
+  </div>
+
+<!-- Pre-Order Section -->
+  <div class="w3-padding-32" id="pre-order">
+    <h1 class="w3-container">Pre-Order | Closes: May 31<sup>st</sup> 2018</h1>
+    <p>Available for pre-order at these stores:</p>
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./pics/logos/donut.png" alt="Donut Cables" style="width:100%">
+        <h3>United States</h3>
+        <p class="w3-opacity">Donut Cables</p>
+        <p><a href="https://donutcables.com/product/gmk-phantom/" target="_blank" class="w3-button w3-black w3-block">Pre-Order</a></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./pics/logos/mechkeys.png" alt="MechKeys" style="width:100%">
+        <h3>Canada</h3>
+        <p class="w3-opacity">MechKeys</p>
+        <p><a href="https://mechkeys.ca/" target="_blank" class="w3-button w3-black w3-block">Pre-Order</a></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./pics/logos/mykbeu.png" alt="My Keyboard" style="width:100%">
+        <h3>Europe</h3>
+        <p class="w3-opacity">My Keyboard</p>
+        <p><a href="https://mykeyboard.eu/" target="_blank" class="w3-button w3-black w3-block">Pre-Order</a></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./pics/logos/zfrontier.png" alt="Zfrontier" style="width:100%">
+        <h3>ASIA | AU | NZ</h3>
+        <p class="w3-opacity">Zfrontier</p>
+        <p><a href="https://en.zfrontier.com/" target="_blank" class="w3-button w3-black w3-block">Pre-Order</a></p>
+      </div>
+    </div>
+  </div>
+
+<!-- Intro Section -->
+  <div class="w3-padding-32" id="intro">
+    <h1 class="w3-container">Thank you!</h1>
+    <p>GMK Phantom wouldn't be possible without YOU. Thank you Janglad and RAMA for providing these beautiful renders. Thank you Donut Cables, Meckeys, My Keyboard EU and Zfrontier for working with me. Special Thanks to JKaos for being very helpful and supportive in all stages of making this set. And last but not least huge thank you to everyone for making this possible ^_^</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-black w3-bar w3-display-container">
+<!-- Float links to the right. Hide them on small screens -->
+  <p class="w3-bar-item">&copy;2018 | briano1905</p>
+  <a href="https://www.instagram.com/briano1905/" target="_blank" class="w3-right w3-bar-item w3-display-right"><img src="./pics/logos/instagram.png" alt="Instagram"></a>
+</footer>
+</body>
+</html>
