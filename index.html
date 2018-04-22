@@ -5,20 +5,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+<body class="w3-light-grey">
 
-<!-- Navbar (sit on top) -->
+<!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>GMK PHANTOM</b></a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#intro" class="w3-bar-item w3-button">Intro</a>
-      <a href="#kits" class="w3-bar-item w3-button">Kits</a>
-      <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
-      <a href="#pre-order" class="w3-bar-item w3-button w3-black">Pre-Order</a>
+  <div class="w3-bar w3-white w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large"><b>GMK PHANTOM</b></a>
+    <div class="w3-hide-small w3-right">
+      <a href="#intro" class="w3-bar-item w3-button w3-padding-large">Intro</a>
+      <a href="#kits" class="w3-bar-item w3-button w3-padding-large">Kits</a>
+      <a href="#gallery" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+      <a href="#pre-order" class="w3-bar-item w3-button w3-padding-large" style="background-color:#47d147; color:#ffffff">Pre-Order</a>
     </div>
   </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#intro" class="w3-bar-item w3-button w3-padding-large">Intro</a>
+  <a href="#kits" class="w3-bar-item w3-button w3-padding-large">Kits</a>
+  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+  <a href="#pre-order" class="w3-bar-item w3-button w3-padding-large" style="background-color:#47d147; color:#ffffff">Pre-Order</a>
 </div>
 
 <!-- Display the countdown timer in an element -->
@@ -55,14 +63,14 @@ var x = setInterval(function() {
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="660-angled.jpg" alt="660" width="1500" height="800">
+  <img class="w3-image" src="660-angled.jpg" alt="660">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white w3-padding w3-black w3-opacity-min"><b id="demo">...</b></h1>
   </div>
 </header>
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1024px">
+<div class="w3-content w3-padding-large w3-white w3-card" style="max-width:1024px">
 
 <!-- Intro Section -->
   <div class="w3-padding-32" id="intro">
@@ -88,6 +96,9 @@ var x = setInterval(function() {
     This kit will cover most keyboard layouts including but not limited to: ANSI, ISO, HHKB, winkeyless, 65%, 75%, 96-key, 1800 and many more
     <ul>
       <li>160 keys (8 novelties)</li>
+      <li>Pricing: US | CA | EU | ASIA/AU/NZ</li>
+      <li>MOQ250: $145 | CAD$- | €135 | $-</li>
+      <li>MOQ500: $130 | CAD$- | €125 | $-</li>
     </ul>
     <div class="w3-display-container w3-margin-bottom">
       <div class="w3-display-topleft w3-black w3-padding">Base</div>
@@ -97,6 +108,10 @@ var x = setInterval(function() {
     Added support for many tiny keyboards like the: planck, preonic, minivan, JD40
     <ul>
       <li>23 keys (4 novelties)</li>
+      <li>Pricing: US | CA | EU | ASIA/AU/NZ</li>
+      <li>MOQ150: $39 | CAD$ | €36 | $</li>
+      <li>MOQ250: $34 | CAD$ | €34 | $</li>
+      <li>MOQ500: $31 | CAD$ | €31 | $</li>
     </ul>
     <div class="w3-display-container w3-margin-bottom">
       <div class="w3-display-topleft w3-black w3-padding">40s</div>
@@ -106,6 +121,10 @@ var x = setInterval(function() {
     Perfect for an ergodox or planck if you prefer blank modifier keys
     <ul>
       <li>49 keys</li>
+      <li>Pricing: US | CA | EU | ASIA/AU/NZ</li>
+      <li>MOQ150: $48 | CAD$ | €45 | $</li>
+      <li>MOQ250: $39 | CAD$ | €40 | $</li>
+      <li>MOQ500: $34 | CAD$ | €38 | $</li>
     </ul>
     <div class="w3-display-container w3-margin-bottom">
       <div class="w3-display-topleft w3-black w3-padding">Ergoplanck</div>
@@ -115,6 +134,11 @@ var x = setInterval(function() {
     For special keyboads with unique spacebar layouts. the small bars are: 1.75, 2.25, 2.75
     <ul>
       <li>7 keys</li>
+      <li>Pricing: US | CA | EU | ASIA/AU/NZ</li>
+      <li>MOQ100: $21 | CAD$ | €21 | $</li>
+      <li>MOQ150: $19 | CAD$ | €20 | $</li>
+      <li>MOQ250: $17 | CAD$ | €19 | $</li>
+      <li>MOQ500: $15 | CAD$ | €17 | $</li>
     </ul>
     <div class="w3-display-container w3-margin-bottom">
       <div class="w3-display-topleft w3-black w3-padding">Spacebar</div>
@@ -124,6 +148,10 @@ var x = setInterval(function() {
     For very special keyboards with european layouts
     <ul>
       <li>42 keys</li>
+      <li>Pricing: US | CA | EU | ASIA/AU/NZ</li>
+      <li>MOQ150: $52 | CAD$ | €49 | $</li>
+      <li>MOQ250: $46 | CAD$ | €46 | $</li>
+      <li>MOQ500: $42 | CAD$ | €42 | $</li>
     </ul>
     <div class="w3-display-container w3-margin-bottom">
       <div class="w3-display-topleft w3-black w3-padding">Euro</div>
@@ -133,6 +161,10 @@ var x = setInterval(function() {
     For the most special keyboards with dvorak or colemak layout
     <ul>
       <li>30 keys</li>
+      <li>Pricing: US | CA | EU | ASIA/AU/NZ</li>
+      <li>MOQ150: $45 | CAD$ | €41 | $</li>
+      <li>MOQ250: $40 | CAD$ | €37 | $</li>
+      <li>MOQ500: $37 | CAD$ | €35 | $</li>
     </ul>
     <div class="w3-display-container w3-margin-bottom">
       <div class="w3-display-topleft w3-black w3-padding">Colevrak</div>
@@ -203,25 +235,25 @@ var x = setInterval(function() {
         <img src="donut.png" alt="Donut Cables" style="width:100%">
         <h3>United States</h3>
         <p class="w3-opacity">Donut Cables</p>
-        <p><a href="https://donutcables.com/product/gmk-phantom/" target="_blank" class="w3-button w3-black w3-block">Pre-Order</a></p>
+        <p><a href="https://donutcables.com/product/gmk-phantom/" target="_blank" class="w3-button w3-block" style="background-color:#47d147; color:#ffffff">Pre-Order</a></p>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
         <img src="mechkeys.png" alt="MechKeys" style="width:100%">
         <h3>Canada</h3>
         <p class="w3-opacity">MechKeys CA</p>
-        <p><a href="https://mechkeys.ca/products/gmk-phantom/" target="_blank" class="w3-button w3-black w3-block">Pre-Order</a></p>
+        <p><a href="https://mechkeys.ca/products/gmk-phantom/" target="_blank" class="w3-button w3-block" style="background-color:#47d147; color:#ffffff">Pre-Order</a></p>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
         <img src="mykbeu.png" alt="My Keyboard" style="width:100%">
         <h3>Europe</h3>
         <p class="w3-opacity">My Keyboard EU</p>
-        <p><a href="https://mykeyboard.eu/" target="_blank" class="w3-button w3-black w3-block">Pre-Order</a></p>
+        <p><a href="https://mykeyboard.eu/" target="_blank" class="w3-button w3-block" style="background-color:#47d147; color:#ffffff">Pre-Order</a></p>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
         <img src="zfrontier.png" alt="Zfrontier" style="width:100%">
-        <h3>ASIA | AU | NZ</h3>
+        <h3>ASIA / AU / NZ</h3>
         <p class="w3-opacity">Zfrontier</p>
-        <p><a href="https://en.zfrontier.com/" target="_blank" class="w3-button w3-black w3-block">Pre-Order</a></p>
+        <p><a href="https://en.zfrontier.com/" target="_blank" class="w3-button w3-block" style="background-color:#47d147; color:#ffffff">Pre-Order</a></p>
       </div>
     </div>
   </div>
@@ -239,8 +271,8 @@ var x = setInterval(function() {
 <footer class="w3-bar w3-white w3-padding w3-black">
   <div class="w3-bar-item">&copy; 2018. briano1905</div>
   <div class="w3-right">
-    <a href="https://www.reddit.com/user/briano1905/" target="_blank" class="w3-bar-item"><img src="reddit.png" alt="reddit"></a>
-    <a href="https://www.instagram.com/briano1905/" target="_blank" class="w3-bar-item"><img src="instagram.png" alt="Instagram"></a>
+    <a href="https://www.reddit.com/user/briano1905/" target="_blank" class="w3-bar-item w3-hover-opacity"><img src="reddit.png" alt="reddit"></a>
+    <a href="https://www.instagram.com/briano1905/" target="_blank" class="w3-bar-item w3-hover-opacity"><img src="instagram.png" alt="Instagram"></a>
   </div>
 </footer>
 </body>
