@@ -275,5 +275,17 @@ var x = setInterval(function() {
     <a href="https://www.instagram.com/briano1905/" target="_blank" class="w3-bar-item w3-hover-opacity"><img src="instagram.png" alt="Instagram"></a>
   </div>
 </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 </body>
 </html>
