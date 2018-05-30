@@ -32,43 +32,11 @@
   <a href="#pre-order" class="w3-bar-item w3-button w3-padding-large" style="background-color:#47d147; color:#ffffff">Pre-Order</a>
 </div>
 
-<!-- Display the countdown timer in an element -->
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 1, 2018 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "GMK PHANTOM IS NOW LIVE!";
-  }
-}, 1000);
-</script>
-
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="660-angled.jpg" alt="660">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white w3-padding w3-black w3-opacity-min"><b id="demo">...</b></h1>
+    <h1 class="w3-xxlarge w3-text-white w3-padding w3-black w3-opacity-min"></h1>
   </div>
 </header>
 
@@ -100,7 +68,7 @@ var x = setInterval(function() {
     <ul>
       <li>160 keys (8 novelties)</li>
     </ul>
-    Units sold: 170
+    Units sold: 206
     <table class="w3-table">
       <tr>
         <th>Pricing</th>
@@ -133,7 +101,7 @@ var x = setInterval(function() {
     <ul>
       <li>23 keys (4 novelties)</li>
     </ul>
-    Units sold: 16
+    Units sold: 21
     <table class="w3-table">
       <tr>
         <th>Pricing</th>
@@ -173,7 +141,7 @@ var x = setInterval(function() {
     <ul>
       <li>49 keys</li>
     </ul>
-    Units sold: 8
+    Units sold: 9
     <table class="w3-table">
       <tr>
         <th>Pricing</th>
@@ -213,7 +181,7 @@ var x = setInterval(function() {
     <ul>
       <li>7 keys</li>
     </ul>
-    Units sold: 87
+    Units sold: 97
     <table class="w3-table">
       <tr>
         <th>Pricing</th>
@@ -260,7 +228,7 @@ var x = setInterval(function() {
     <ul>
       <li>42 keys</li>
     </ul>
-    Units sold: 6
+    Units sold: 13
     <table class="w3-table">
       <tr>
         <th>Pricing</th>
